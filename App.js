@@ -1,20 +1,12 @@
-import React from "react";
-import { View, Text, StyleSheet, StatusBar } from "react-native";
-import { colors } from "./src/global/styles";
-import RootNavigator from "./src/navigation/RootNavigator";
-import SignInWelcomeScreen from "./src/screens/authScreens/SignInWelcomeScreen";
+import React from 'react';
+import { store } from "./app/redux/store";
+import { Provider } from "react-redux";
+import AppNavigator from './app/navigation/AppNavigator'
 
-function App() {
+export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar barStyle="light-content" backgroundColor={colors.statusbar} />
-      <RootNavigator />
-    </View>
+    <Provider store={store}>
+      <AppNavigator />
+    </Provider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: { flex: 1 },
-});
-
-export default App;

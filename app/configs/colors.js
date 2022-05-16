@@ -1,0 +1,15 @@
+export default {
+  primary: "#4f00ed",
+  secondary: "#100046",
+  black: "#000",
+  white: "#fff",
+  medium: "#F3F3F3",
+  gray: "#4D4D4E",
+  light: "#F9F9F9",
+  dark: "#0c0c0c",
+  denger: "#E81A1A",
+  slate: "#0b0a40",
+  title: "#0c0c0c",
+  activeTintColor: "#000",
+  inActiveTintColor: "#AEAEAE",
+};
